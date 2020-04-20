@@ -3,23 +3,29 @@
 <html lang="en">
 <head>
   <h1 style=text-align:center>Let's play Tic Tac Toe</h1>
+
 </head>
 <body>
-  <table border="1px solid black" width=200px height=300px cellpadding="63" style="text-align: center; margin:auto">
-    <tr>
-      <td id="L1" onclick="addClick(this.id)"></td>
-      <td id="M1" onclick="addClick(this.id)"></td>
-      <td id="R1" onclick="addClick(this.id)"></td>
+
+  <div>
+    <button onclick="resetBoard()" class="button" style="margin: auto; display: block; padding: 2px; ">New Game</button>
+  </div>
+  <h3 id="winner" style='text-align:center; color: red;'></h3>
+  <table id="table" border="1px solid black" width=200px height=300px cellpadding="63" style="text-align: center; margin-top: 50px; margin-left: auto; margin-bottom:auto; margin-right: auto; " >
+    <tr id="tr">
+      <td id="0" onclick="addClick(this.id)"></td>
+      <td id="1" onclick="addClick(this.id)"></td>
+      <td id="2" onclick="addClick(this.id)"></td>
     </tr>
-    <tr>
-      <td id="L2" onclick="addClick(this.id)"></td>
-      <td id="M2" onclick="addClick(this.id)"></td>
-      <td id="R2" onclick="addClick(this.id)"></td>
+    <tr id="tr">
+      <td id="3" onclick="addClick(this.id)"></td>
+      <td id="4" onclick="addClick(this.id)"></td>
+      <td id="5" onclick="addClick(this.id)"></td>
     </tr>
-    <tr>
-      <td id="L3" onclick="addClick(this.id)"></td>
-      <td id="M3" onclick="addClick(this.id)"></td>
-      <td id="R3" onclick="addClick(this.id)"></td>
+    <tr id="tr">
+      <td id="6" onclick="addClick(this.id)"></td>
+      <td id="7" onclick="addClick(this.id)"></td>
+      <td id="8" onclick="addClick(this.id)"></td>
     </tr>
   </table>
 
