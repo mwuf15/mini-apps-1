@@ -15,6 +15,7 @@ var addClick = function (clickId) {
       document.getElementById('winner').innerHTML = 'Invalid space, Please choose another spot';
     } else {
       document.getElementById(clickId).innerHTML = 'X';
+      document.getElementById('winner').innerHTML = "";
       board[clickId] = 'X';
       xCount += 1;
       isDefault = false;
@@ -29,6 +30,7 @@ var addClick = function (clickId) {
       document.getElementById('winner').innerHTML = 'Invalid space, Please choose another spot';
     } else {
       document.getElementById(clickId).innerHTML = 'O';
+      document.getElementById('winner').innerHTML = "";
       board[clickId] = 'O';
       oCount += 1;
       isDefault = true;

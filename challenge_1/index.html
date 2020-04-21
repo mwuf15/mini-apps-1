@@ -2,30 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <h1 style=text-align:center>Let's play Tic Tac Toe</h1>
+  <h1 style="text-align:center; color: beige; textShadow:5px 5px 1px #ff0000, 10px 10px 1px #0000ff">Let's play Tic Tac Toe</h1>
 
 </head>
-<body>
+<body style="background-color: #00BFFF;">
 
   <div>
     <button onclick="resetBoard()" class="button" style="margin: auto; display: block; padding: 2px; ">New Game</button>
   </div>
   <h3 id="winner" style='text-align:center; color: red;'></h3>
-  <table id="table" border="1px solid black" width=200px height=300px cellpadding="63" style="text-align: center; margin-top: 50px; margin-left: auto; margin-bottom:auto; margin-right: auto; " >
+  <table id="table" border=1px  width=500px height=500px cellpadding="63" style="text-align: center; margin-top: 100px; margin-left: 200px; margin-bottom:100px; margin-right: 250px; background-color:#E0FFFF; border-color: cornflowerblue; border: thick solid rgb(201, 238, 226); box-shadow: 5px 10px rgba(116, 114, 114, 0.247)">
     <tr id="tr">
-      <td id="0" onclick="addClick(this.id)"></td>
-      <td id="1" onclick="addClick(this.id)"></td>
-      <td id="2" onclick="addClick(this.id)"></td>
+      <td id="0" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
+      <td id="1" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
+      <td id="2" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
     </tr>
     <tr id="tr">
-      <td id="3" onclick="addClick(this.id)"></td>
-      <td id="4" onclick="addClick(this.id)"></td>
-      <td id="5" onclick="addClick(this.id)"></td>
+      <td id="3" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
+      <td id="4" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
+      <td id="5" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
     </tr>
     <tr id="tr">
-      <td id="6" onclick="addClick(this.id)"></td>
-      <td id="7" onclick="addClick(this.id)"></td>
-      <td id="8" onclick="addClick(this.id)"></td>
+      <td id="6" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
+      <td id="7" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
+      <td id="8" onclick="addClick(this.id)" style="font-size: 25px ; color: crimson"></td>
     </tr>
   </table>
 
