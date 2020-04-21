@@ -10,19 +10,32 @@ var oCount = 0;
 var addClick = function (clickId) {
 
   if(isDefault ){
-    document.getElementById(clickId).innerHTML = 'X';
-    board[clickId] = 'X';
-    xCount += 1;
-    isDefault = false;
-    checkWinner(board);
+    if (document.getElementById(clickId).innerHTML === 'X' ||
+      document.getElementById(clickId).innerHTML === 'O') {
+      document.getElementById('winner').innerHTML = 'Invalid space, Please choose another spot';
+    } else {
+      document.getElementById(clickId).innerHTML = 'X';
+      board[clickId] = 'X';
+      xCount += 1;
+      isDefault = false;
+      checkWinner(board);
+      console.log('x: ',xCount)
+      console.log('o: ',oCount)
+    }
 
   } else {
-    document.getElementById(clickId).innerHTML = 'O';
-    board[clickId] = 'O';
-    oCount += 1;
-    isDefault = true;
-    checkWinner(board);
-
+    if (document.getElementById(clickId).innerHTML === 'X' ||
+      document.getElementById(clickId).innerHTML === 'O') {
+      document.getElementById('winner').innerHTML = 'Invalid space, Please choose another spot';
+    } else {
+      document.getElementById(clickId).innerHTML = 'O';
+      board[clickId] = 'O';
+      oCount += 1;
+      isDefault = true;
+      checkWinner(board);
+      console.log('x: ',xCount)
+      console.log('o: ',oCount)
+      }
   }
 }
 
@@ -68,17 +81,11 @@ var checkWinner = function (board) {
 }
 var resetBoard = function () {
   board=[];
-  var xCount = 0;
-  var oCount = 0;
-  document.getElementById('0').innerHTML = '';
-  document.getElementById('1').innerHTML = '';
-  document.getElementById('2').innerHTML = '';
-  document.getElementById('3').innerHTML = '';
-  document.getElementById('4').innerHTML = '';
-  document.getElementById('5').innerHTML = '';
-  document.getElementById('6').innerHTML = '';
-  document.getElementById('7').innerHTML = '';
-  document.getElementById('8').innerHTML = '';
+   xCount = 0;
+   oCount = 0;
+  for ( var i = 0; i < 9; i ++) {
+    document.getElementById(i).innerHTML = '';
+  }
   document.getElementById("winner").innerHTML = '';
 
   console.log(board)
