@@ -5,16 +5,22 @@ const app = express()
 const PORT = 3000
 
 
-// app.get('/', (req, res) => {
-//   res.send('Hello Human')
-// })
-app.use(express.static('client'))
-// console.log(__dirname)
-app.post('/upload_json', (req,res) => {
-  console.log()
-  res.end('data')
+app.get('/upload_json', (req, res) => {
+  // console.log(req.body)
+  res.json("hello")
 })
 
 app.listen(PORT, () => {
   console.log(`connected and running on port ${PORT}`)
 })
+
+app.use(express.static('client'))
+
+
+// console.log(__dirname)
+
+app.post('/upload_json', (req,res) => {
+  res.send('hello')
+
+})
+
