@@ -26,19 +26,25 @@
     text-align: center;
     padding: 20PX;
     margin: auto;
+    background-color: snow;
   }
 
   .titleContainer {
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-rows: 30px 30px 30px 30px;
     justify-self: center;
     align-self: center;
     /* margin-top: 100px; */
   }
-
+ .boardContainer {
+   /* background-color: rgb(204, 220, 228); */
+ }
   #currentPlayer {
     grid-row-start: 3;
     align-self: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
   }
 
   #occupied {
@@ -50,10 +56,25 @@
     grid-row-start: 1;
     align-self: center;
   }
+  h2 {
+    color: red;
+  }
+  h1 {
+
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+  }
   #newGame {
-    /* grid-row-start: 4; */
+
     align-self: center;
     margin:auto;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  html {
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
   }
 
 </style>
