@@ -1,7 +1,7 @@
 // const app = require ""
 
 
-var clickHandler = function() {
+var handleClick = function() {
   console.log('clicked')
 }
 
